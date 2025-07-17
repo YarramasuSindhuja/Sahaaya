@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance - Sahaya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Sahaya</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mental-health.html" class="nav-link">Mental Health</a>
+                </li>
+                <li class="nav-item">
+                    <a href="career.html" class="nav-link active">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="awareness.html" class="nav-link">Awareness</a>
+                </li>
+                <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Career <span class="highlight">Guidance</span></h1>
+                <p class="hero-subtitle">Discover your path, take aptitude tests, connect with mentors, and access career resources.</p>
+                <div class="hero-buttons">
+                    <a href="#quiz" class="btn btn-primary">Take Aptitude Quiz</a>
+                    <a href="#mentorSection" class="btn btn-secondary">Connect with Mentors</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Career Quiz</h3>
+                    <p>Discover Your Path</p>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Mentor Network</h3>
+                    <p>Expert Guidance</p>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Resume Templates</h3>
+                    <p>Professional Tools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aptitude Quiz Section -->
+    <section id="quiz" class="features">
+        <div class="container">
+            <div class="quiz-container">
+                <div id="quizContainer">
+                    <!-- Quiz content will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Resources Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Career Resources</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Resume Templates</h3>
+                    <p>Professional resume templates for different career stages and industries.</p>
+                    <div id="templatesContainer" class="content-grid">
+                        <!-- Templates will be loaded dynamically -->
+                    </div>
+                    <div class="resume-actions" style="margin-top: 1rem;">
+                        <button id="previewResume" class="btn btn-secondary" style="margin-right: 0.5rem;">
+                            <i class="fas fa-eye"></i> Preview Resume
+                        </button>
+                        <button id="downloadResume" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Job Search Tips</h3>
+                    <p>Essential strategies for effective job searching and career advancement.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>Optimize your LinkedIn profile</li>
+                        <li>Network effectively</li>
+                        <li>Prepare for interviews</li>
+                        <li>Negotiate salary</li>
+                        <li>Build your personal brand</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Industry Insights</h3>
+                    <p>Stay updated with the latest trends and opportunities in various industries.</p>
+                    <div class="industry-list">
+                        <div class="industry-item">
+                            <h4>Technology</h4>
+                            <p>AI, Machine Learning, Web Development</p>
+                        </div>
+                        <div class="industry-item">
+                            <h4>Healthcare</h4>
+                            <p>Nursing, Medical Research, Public Health</p>
+                        </div>
+                        <div class="industry-item">
+                            <h4>Business</h4>
+                            <p>Marketing, Finance, Entrepreneurship</p>
+                        </div>
+                        <div class="industry-item">
+                            <h4>Creative Arts</h4>
+                            <p>Design, Media, Entertainment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Program Section -->
+    <section id="joinProgram" class="cta">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title">Join Our Programs</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                    Enroll in our specialized programs designed to accelerate your career growth and personal development.
+                </p>
+                <div id="programLoginPrompt" style="display: none; text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+                    <h3>Please Login to Join Programs</h3>
+                    <p>You need to be logged in to register for our programs.</p>
+                    <a href="login.html" class="btn btn-primary">Login Now</a>
+                </div>
+                <form id="programForm" style="display: block;">
+                    <div class="form-group">
+                        <label for="programName" class="form-label">Full Name *</label>
+                        <input type="text" id="programName" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="programEmail" class="form-label">Email Address *</label>
+                        <input type="email" id="programEmail" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectedProgram" class="form-label">Select Program *</label>
+                        <select id="selectedProgram" class="form-input" required>
+                            <option value="">Choose a program</option>
+                            <option value="tech-bootcamp">Tech Bootcamp (3 months)</option>
+                            <option value="career-mentorship">Career Mentorship Program</option>
+                            <option value="soft-skills">Soft Skills Development</option>
+                            <option value="entrepreneurship">Entrepreneurship Workshop</option>
+                            <option value="leadership">Leadership Training</option>
+                            <option value="digital-marketing">Digital Marketing Course</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="programMessage" class="form-label">Why do you want to join this program?</label>
+                        <textarea id="programMessage" class="form-textarea" placeholder="Tell us about your goals and what you hope to achieve..."></textarea>
+                    </div>
+                    <button type="submit" class="form-button" data-original-text="Join Program">Join Program</button>
+                </form>
+                <div class="form-link">
+                    <p>Need help choosing? <a href="#mentorSection">Connect with a mentor</a> first</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentor Section -->
+    <section id="mentorSection" class="features">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title">Connect with a Mentor</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                    Get personalized guidance from experienced professionals in your field of interest. 
+                    Our mentors are here to help you navigate your career path.
+                </p>
+                <form id="mentorForm">
+                    <div class="form-group">
+                        <label for="mentorName" class="form-label">Full Name *</label>
+                        <input type="text" id="mentorName" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mentorEmail" class="form-label">Email Address *</label>
+                        <input type="email" id="mentorEmail" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mentorField" class="form-label">Field of Interest *</label>
+                        <select id="mentorField" class="form-input" required>
+                            <option value="">Select your field of interest</option>
+                            <option value="technology">Technology & IT</option>
+                            <option value="healthcare">Healthcare & Medicine</option>
+                            <option value="business">Business & Finance</option>
+                            <option value="education">Education & Training</option>
+                            <option value="arts">Arts & Creative</option>
+                            <option value="science">Science & Research</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="marketing">Marketing & Sales</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mentorMessage" class="form-label">Tell us about your goals</label>
+                        <textarea id="mentorMessage" class="form-textarea" placeholder="Share your career goals, challenges, or specific questions you have for potential mentors..."></textarea>
+                    </div>
+                    <button type="submit" class="form-button" data-original-text="Submit Request">Submit Request</button>
+                </form>
+                <div class="form-link">
+                    <p>Already have an account? <a href="login.html">Sign in</a> to track your requests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Development Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Skills Development</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Technical Skills</h3>
+                    <p>Develop in-demand technical skills for the modern workforce.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>Programming & Coding</li>
+                        <li>Data Analysis</li>
+                        <li>Digital Marketing</li>
+                        <li>Project Management</li>
+                        <li>Graphic Design</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <p>Master essential soft skills that employers value highly.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>Communication</li>
+                        <li>Leadership</li>
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certifications</h3>
+                    <p>Earn valuable certifications to boost your resume and career prospects.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>Google Certifications</li>
+                        <li>Microsoft Office</li>
+                        <li>Project Management (PMP)</li>
+                        <li>Digital Marketing</li>
+                        <li>Data Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="features">
+        <div class="container">
+            <div class="support-section">
+                <div class="support-content">
+                    <h2>Need Help?</h2>
+                    <p>We're here to understand your needs and support you on your career journey.</p>
+                    <div class="support-contact">
+                        <i class="fas fa-envelope"></i>
+                        <p>Write to us at <a href="mailto:sinyarra@gmail.com">sinyarra@gmail.com</a></p>
+                    </div>
+                    <p class="support-note">Our team is dedicated to helping youth like you succeed. Don't hesitate to reach out!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Sahaya</span>
+                    </div>
+                    <p>Empowering youth through mental health support, career guidance, and social awareness.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="career.html">Career Guidance</a></li>
+                        <li><a href="awareness.html">Social Awareness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sahaya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Preview Modal -->
+    <div id="resumeModal" class="modal" style="display: none;">
+        <div class="modal-content" style="max-width: 800px; max-height: 90vh; overflow-y: auto;">
+            <div class="modal-header">
+                <h2>Resume Preview</h2>
+                <span class="close" id="closeResumeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="resumePreview" class="resume-preview">
+                    <!-- Resume content will be loaded here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="downloadFromPreview" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <button class="btn btn-secondary" onclick="closeResumeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 

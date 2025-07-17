@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Awareness - Sahaya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Sahaya</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mental-health.html" class="nav-link">Mental Health</a>
+                </li>
+                <li class="nav-item">
+                    <a href="career.html" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="awareness.html" class="nav-link active">Awareness</a>
+                </li>
+                <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Social <span class="highlight">Awareness</span></h1>
+                <p class="hero-subtitle">Stay informed about important social issues, participate in community events, and make a positive impact.</p>
+                <div class="hero-buttons">
+                    <a href="#issues" class="btn btn-primary">Learn About Issues</a>
+                    <a href="#events" class="btn btn-secondary">Join Events</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Social Issues</h3>
+                    <p>Stay Informed</p>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Community Events</h3>
+                    <p>Get Involved</p>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Volunteer</h3>
+                    <p>Make Impact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Issues Section -->
+    <section id="issues" class="features">
+        <div class="container">
+            <h2 class="section-title">Important Social Issues</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Environmental Conservation</h3>
+                    <p>Learn about climate change, sustainability, and how to protect our planet for future generations.</p>
+                    <div class="video-card">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <h4>Climate Change Impact</h4>
+                        <p>Understanding the effects of climate change on our world</p>
+                    </div>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>Reduce plastic usage</li>
+                        <li>Support renewable energy</li>
+                        <li>Conserve water and electricity</li>
+                        <li>Participate in clean-up drives</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Social Justice</h3>
+                    <p>Understand issues of equality, human rights, and how to advocate for positive change.</p>
+                    <div class="video-card">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <h4>Understanding Privilege</h4>
+                        <p>How to recognize and address systemic inequalities</p>
+                    </div>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>Educate yourself on diverse perspectives</li>
+                        <li>Support marginalized communities</li>
+                        <li>Speak up against discrimination</li>
+                        <li>Vote and participate in democracy</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Mental Health Awareness</h3>
+                    <p>Break the stigma around mental health and support those who are struggling.</p>
+                    <div class="video-card">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <h4>Mental Health Stigma</h4>
+                        <p>How to support friends and family with mental health challenges</p>
+                    </div>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>Learn about mental health conditions</li>
+                        <li>Practice empathy and active listening</li>
+                        <li>Share resources and support</li>
+                        <li>Advocate for mental health services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="features">
+        <div class="container">
+            <h2 class="section-title">Community Events</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Upcoming Events</h3>
+                    <p>Join community events, workshops, and volunteer opportunities in your area.</p>
+                    <div id="eventsContainer" class="content-grid">
+                        <!-- Events will be loaded dynamically -->
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <button id="registerEventBtn" class="btn btn-primary">
+                            <i class="fas fa-calendar-plus"></i> Register for Event
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Volunteer Opportunities</h3>
+                    <p>Find meaningful ways to give back to your community and make a difference.</p>
+                    <div class="volunteer-opportunities">
+                        <div class="opportunity-item">
+                            <h4>Local Food Bank</h4>
+                            <p>Help sort and distribute food to families in need</p>
+                            <small>Every Saturday, 9 AM - 12 PM</small>
+                        </div>
+                        <div class="opportunity-item">
+                            <h4>Community Garden</h4>
+                            <p>Maintain community gardens and teach sustainable practices</p>
+                            <small>Every Sunday, 2 PM - 5 PM</small>
+                        </div>
+                        <div class="opportunity-item">
+                            <h4>Youth Mentoring</h4>
+                            <p>Mentor young students in academic and life skills</p>
+                            <small>Weekdays, 3 PM - 6 PM</small>
+                        </div>
+                        <div class="opportunity-item">
+                            <h4>Environmental Cleanup</h4>
+                            <p>Participate in local park and beach cleanup events</p>
+                            <small>Monthly events</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Advocacy & Activism</h3>
+                    <p>Learn how to effectively advocate for causes you care about.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>Write to elected officials</li>
+                        <li>Participate in peaceful protests</li>
+                        <li>Share information on social media</li>
+                        <li>Support organizations financially</li>
+                        <li>Educate others about important issues</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Resources Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Educational Resources</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Recommended Reading</h3>
+                    <p>Expand your knowledge with books and articles on social issues.</p>
+                    <div class="reading-list">
+                        <div class="book-item">
+                            <h4>"The New Jim Crow" by Michelle Alexander</h4>
+                            <p>Understanding mass incarceration and racial justice</p>
+                        </div>
+                        <div class="book-item">
+                            <h4>"Silent Spring" by Rachel Carson</h4>
+                            <p>Environmental awareness and conservation</p>
+                        </div>
+                        <div class="book-item">
+                            <h4>"The Hate U Give" by Angie Thomas</h4>
+                            <p>Young adult fiction addressing police brutality</p>
+                        </div>
+                        <div class="book-item">
+                            <h4>"This Changes Everything" by Naomi Klein</h4>
+                            <p>Climate change and capitalism</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-podcast"></i>
+                    </div>
+                    <h3>Podcasts & Media</h3>
+                    <p>Listen to informative podcasts and watch documentaries on social issues.</p>
+                    <div class="media-list">
+                        <div class="media-item">
+                            <h4>Podcasts</h4>
+                            <ul style="color: #666;">
+                                <li>"Code Switch" - NPR</li>
+                                <li>"The Daily" - New York Times</li>
+                                <li>"Pod Save America" - Crooked Media</li>
+                                <li>"The Ezra Klein Show" - Vox</li>
+                            </ul>
+                        </div>
+                        <div class="media-item">
+                            <h4>Documentaries</h4>
+                            <ul style="color: #666;">
+                                <li>"13th" - Netflix</li>
+                                <li>"An Inconvenient Truth"</li>
+                                <li>"The Social Dilemma" - Netflix</li>
+                                <li>"I Am Not Your Negro"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Online Courses</h3>
+                    <p>Take free online courses to deepen your understanding of social issues.</p>
+                    <div class="course-list">
+                        <div class="course-item">
+                            <h4>Social Justice Courses</h4>
+                            <p>Free courses on Coursera, edX, and Khan Academy</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Environmental Science</h4>
+                            <p>Learn about climate change and sustainability</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Human Rights</h4>
+                            <p>Understanding international human rights law</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Community Organizing</h4>
+                            <p>Learn effective advocacy and organizing skills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Take Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Make a Difference?</h2>
+                <p>Start small, think big. Every action counts towards creating positive change in your community.</p>
+                <div class="action-buttons">
+                    <a href="#events" class="btn btn-primary">Find Local Events</a>
+                    <a href="#issues" class="btn btn-secondary">Learn More</a>
+                    <a href="mental-health.html" class="btn btn-outline">Get Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="features">
+        <div class="container">
+            <div class="support-section">
+                <div class="support-content">
+                    <h2>Need Help?</h2>
+                    <p>We're here to understand your needs and support you on your social awareness journey.</p>
+                    <div class="support-contact">
+                        <i class="fas fa-envelope"></i>
+                        <p>Write to us at <a href="mailto:sinyarra@gmail.com">sinyarra@gmail.com</a></p>
+                    </div>
+                    <p class="support-note">Our team is dedicated to helping youth like you succeed. Don't hesitate to reach out!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Sahaya</span>
+                    </div>
+                    <p>Empowering youth through mental health support, career guidance, and social awareness.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="career.html">Career Guidance</a></li>
+                        <li><a href="awareness.html">Social Awareness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sahaya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Event Registration Modal -->
+    <div id="eventModal" class="modal" style="display: none;">
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="modal-header">
+                <h2>Event Registration</h2>
+                <span class="close" id="closeEventModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="eventLoginPrompt" style="display: none; text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+                    <h3>Please Login to Register for Events</h3>
+                    <p>You need to be logged in to register for community events.</p>
+                    <a href="login.html" class="btn btn-primary">Login Now</a>
+                </div>
+                <form id="eventRegistrationForm" style="display: block;">
+                    <div class="form-group">
+                        <label for="eventName" class="form-label">Full Name *</label>
+                        <input type="text" id="eventName" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventEmail" class="form-label">Email Address *</label>
+                        <input type="email" id="eventEmail" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectedEvent" class="form-label">Select Event *</label>
+                        <select id="selectedEvent" class="form-input" required>
+                            <option value="">Choose an event</option>
+                            <option value="environmental-cleanup">Environmental Cleanup Drive</option>
+                            <option value="youth-mentoring">Youth Mentoring Workshop</option>
+                            <option value="community-garden">Community Garden Project</option>
+                            <option value="mental-health-awareness">Mental Health Awareness Seminar</option>
+                            <option value="social-justice-forum">Social Justice Forum</option>
+                            <option value="sustainability-workshop">Sustainability Workshop</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDate" class="form-label">Preferred Date *</label>
+                        <input type="date" id="eventDate" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventMessage" class="form-label">Why do you want to join this event?</label>
+                        <textarea id="eventMessage" class="form-textarea" placeholder="Tell us about your interest in this event and what you hope to contribute..."></textarea>
+                    </div>
+                    <button type="submit" class="form-button" data-original-text="Register for Event">Register for Event</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeEventModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 

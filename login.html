@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sahaya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Sahaya</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mental-health.html" class="nav-link">Mental Health</a>
+                </li>
+                <li class="nav-item">
+                    <a href="career.html" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="awareness.html" class="nav-link">Awareness</a>
+                </li>
+                <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link active">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title">Welcome Back</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                    Sign in to access your personalized dashboard and track your progress.
+                </p>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" required>
+                    </div>
+                    <button type="submit" class="form-button" data-original-text="Sign In">Sign In</button>
+                </form>
+                <div class="form-link">
+                    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                    <p><a href="#" onclick="showForgotPassword()">Forgot your password?</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="features">
+        <div class="container">
+            <div class="support-section">
+                <div class="support-content">
+                    <h2>Need Help?</h2>
+                    <p>We're here to understand your needs and support you.</p>
+                    <div class="support-contact">
+                        <i class="fas fa-envelope"></i>
+                        <p>Write to us at <a href="mailto:sinyarra@gmail.com">sinyarra@gmail.com</a></p>
+                    </div>
+                    <p class="support-note">Our team is dedicated to helping youth like you succeed. Don't hesitate to reach out!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Sahaya</span>
+                    </div>
+                    <p>Empowering youth through mental health support, career guidance, and social awareness.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="career.html">Career Guidance</a></li>
+                        <li><a href="awareness.html">Social Awareness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sahaya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        function showForgotPassword() {
+            const email = document.getElementById('email').value;
+            if (!email) {
+                showAlert('Please enter your email address first.', 'error');
+                return;
+            }
+            
+            // This would typically send a password reset email
+            showAlert('Password reset link sent to your email!', 'success');
+        }
+    </script>
+</body>
+</html> 
